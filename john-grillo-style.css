@@ -1,0 +1,10 @@
+/*! john-grillo-style.css */
+* {
+  box-sizing: border-box;
+}
+
+.sidebar {
+  float: right;
+  list-style-type: none;
+  background-color: lime;
+}
