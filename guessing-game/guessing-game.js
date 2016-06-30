@@ -13,6 +13,10 @@ function IsNumeric(input)
 //brilliant method, wish i had thought of it. Full write up of it can be found here.
 //http://stackoverflow.com/questions/18082/validate-decimal-numbers-in-javascript-isnumeric
 
+var audio = new Audio("victory.wav");
+//to invoke method...
+// audio.play();
+
 // THIS IS THE FIRST QUESTION BLOCK
 var answerCount = 0;
 var questAnswer = "\nTo pimp strong and prosper";
@@ -69,10 +73,12 @@ if (IsNumeric(bonusQuestion) == true && bonusQuestion == 1) {
 //AND NOW FOR SCORING.
 if(answerCount > 3) {
   alert("ABOVE AND BEYOND! YOU WON THE GAME WITH 125%");
-  console.log("USER DESTROYED THE GAME WITH 125%")
+  console.log("USER DESTROYED THE GAME WITH 125%");
+  audio.play();
 } else if (answerCount == 3) {
   alert("bingo! You got all 3 right! buy yourself a milkshake");
-  console.log("USER WON THE GAME")
+  console.log("USER WON THE GAME");
+  audio.play();
 }
  else if (answerCount == 2) {
   alert("Meh; At 2 pts I wouldn't write home about it");
