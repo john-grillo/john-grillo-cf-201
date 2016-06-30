@@ -12,7 +12,7 @@ if(questQuestion.toLowerCase().indexOf("pimp") >= 0) {
 
   answerCount +=1;
 }  else {
-   alert("BZZZT! Wrong answer! Let's move on!")
+   alert("BZZZT! Wrong answer! His quest is " + questAnswer)
 
 }
 
@@ -24,16 +24,16 @@ if(celebrityQuestion.toLowerCase().indexOf("riker") >=0 ) {
   answerCount +=1;
 
 } else {
-  alert("BZZZT! Wrong answer! Let's move on!")
+  alert("BZZZT! Wrong answer! " + celebrityAnswer)
 }
 
-var passAnswer = "Oh really? Let's tally up that score";
+var passAnswer = "Let's tally up that score...";
 var passQuestion = prompt("So, did you get the first two questions right?");
 if(passQuestion.toLowerCase().indexOf("yes") >=0) {
-  alert("Hey, you got it right! JAG's answer is " + passAnswer);
+  alert("Hey, you got it the freebie. Good on you.");
   answerCount +=1;
 } else {
-  alert("BZZZT! Wrong answer! Let's move on!")
+  alert("BZZZT! " + passAnswer);
 }
 
 if(answerCount == 3) {
