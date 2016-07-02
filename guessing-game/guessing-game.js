@@ -59,7 +59,7 @@ if(passQuestion.toLowerCase().indexOf("yes") >=0) {
 
 // BONUS 4TH QUESTION, for the extra credit assignment.
 var bonusQuestion = prompt("SURPRISE BONUS ROUND! \nAll you have to do is guess a number between 1 and 12, inclusive.");
-if (IsNumeric(bonusQuestion) == true && bonusQuestion == 1) {
+if (parseInt(bonusQuestion) == true && bonusQuestion == 1) {
   alert("Very nice! You just got yourself a bonus qustion. \nTHERE CAN BE ONLY ONE!");
   console.log("User earned bonus point");
   answerCount +=1;
@@ -67,6 +67,24 @@ if (IsNumeric(bonusQuestion) == true && bonusQuestion == 1) {
   alert("Sorry, mate! The correct answer is 1!");
   console.log("User done goofed and got nothing. The answer was 1. The 'inclusive' part was a blatant hint");
 }
+
+// BONUS 5TH QUESTION, for the extra credit assignment. A do-while loop. Why don't they have a do-wop loop?
+
+//var doItAgain = true;
+var doItAgain = true;
+do {
+ var bonusQuestion = parseInt(prompt("SURPRISE AGAIN! \nYou don't get points, but to quit this do-while loop you must guess the correct number between 1 and 12. \n And you get no points"));
+ console.log("The loop executes again at line 76");
+ if (bonusQuestion == 1 && Number.isInteger(bonusQuestion) == true ) {
+   alert("You guessed right and can now get your score!");
+   console.log("User done broke the do-while loop");
+   doItAgain = false;
+ } else {
+   alert("Guess again!");
+   console.log("User done goofed and got nothing. The answer was 1. It goes on forever...");
+   doItAgain = true;
+ }
+} while ( doItAgain == true );
 
 
 
