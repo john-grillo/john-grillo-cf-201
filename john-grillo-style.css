@@ -5,7 +5,7 @@
 }
 
 #wrapper {
-  display: flex;
+  display: inline-block;
 
   width: 90%;
   min-height: 100%;
@@ -18,9 +18,10 @@
 }
 
 nav {
-  /* display: inline-block;*/
+  display: inline-block;
   font-size: 1em;
   text-transform: uppercase;
+  margin: auto;
 }
 
 .current {
@@ -41,17 +42,21 @@ nav {
 
 
 .content {
-  float: left;
+  display: block;
+  float: right;
+  width: 60%;
+  margin: auto;
 }
 
 .sidebar {
+  display: block;
   float: right;
   list-style-type: none;
   background-color: lime;
-  width: 100%;
+  width: 33%;
 }
 
 footer {
-  height: 4em;
+  height: 2em;
   flex: 1;
 }
