@@ -2,14 +2,210 @@
 * {
   box-sizing: border-box;
   margin: 0;
+  font-family: "Palatino Linotype", "Book Antiqua", serif;
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+
+    body {
+        background-color: #BDB76B; /*dark khaki */
+    }
+
+    #wrapper {
+      display: block;
+      min-width: 320px;
+      min-height: 100%;
+      flex-direction: column;
+      margin: 0 auto;
+    }
+
+    #wrapper:after {
+      content: "";
+      display: block;
+    }
+
+    nav, nav li {
+      display: block;
+      font-size: 1rem;
+      text-transform: uppercase;
+      margin: auto;
+      padding: .5rem;
+      background-color: #FF8C00; /*dark orange */
+
+    }
+
+
+    .current {
+      position: relative;
+      display: inline-block;
+      color: #cafeba;
+      font-size: 1.25rem;
+      border-radius: 27%;
+      text-transform: uppercase;
+      background: red; /* For browsers that do not support gradients */
+      background: -webkit-linear-gradient(-45deg, red, #00c8ff, green); /* Safari */
+      background: -o-linear-gradient(-45deg, red, #00c8ff, green); /* Opera 11.6 to 12.0 */
+      background: -moz-linear-gradient(-45deg, red, #00c8ff, green); /* Firefox 3.6 to 15 */
+      background: linear-gradient(-45deg, red, #00c8ff, green); /* Standard syntax */
+    }
+
+    article {
+      position: relative;
+      border: 5px dashed azure;
+      float: left;
+      clear: right;
+      background: sandybrown;
+    }
+
+    .content {
+      position: relative;
+      display: block;
+      float: left;
+      clear: both;
+      width: 45%;
+      margin: 2rem;
+      padding: 15px;
+      border: blue;
+      background: #6cf;
+    }
+
+    .sidebar {
+      position: relative;
+      border: 5px solid red;
+      display: block;
+      width: 45%;
+      float: left;
+      clear: both;
+      padding: 1.25em;
+      margin-bottom: .5em;
+      list-style-type: none;
+      background-color: lime;
+    }
+
+
+    footer {
+      position: relative;
+      display: inline-block;
+      list-style-type: none;
+      height: .5em;
+    }
+
+    footer li {
+      display: inline-block;
+      padding: .5rem;
+      list-style-type: none;
+    }
+
+
+/* end of minimum screen size      */
+}
+
+/* TABLET SIZING!     */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+
+  body {
+      background-color: #deadbe; /*dark khaki */
+  }
+
+  #wrapper {
+    display: block;
+    min-width: 480px;
+    min-height: 100%;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+
+  #wrapper:after {
+    content: "";
+    display: block;
+  }
+
+  nav, nav li {
+    display: block;
+    font-size: 1rem;
+    text-transform: uppercase;
+    margin: auto;
+    padding: .5rem;
+    background-color: #FF8C00; /*dark orange */
+
+  }
+
+  .current {
+    display: inline-block;
+    color: #cafeba;
+    font-size: 1.65rem;
+    border-radius: 27%;
+    text-transform: uppercase;
+    background: red; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(-45deg, red, #00c8ff, green); /* Safari */
+    background: -o-linear-gradient(-45deg, red, #00c8ff, green); /* Opera 11.6 to 12.0 */
+    background: -moz-linear-gradient(-45deg, red, #00c8ff, green); /* Firefox 3.6 to 15 */
+    background: linear-gradient(-45deg, red, #00c8ff, green); /* Standard syntax */
+  }
+
+  article {
+    display: block;
+    border: 5px dashed silver;
+    float: left;
+    clear: right;
+    background: sandybrown;
+  }
+
+  .content {
+    display: block;
+    float: left;
+    clear: both;
+    width: 60%;
+    margin: 5rem;
+    padding: 3rem;
+    border: blue;
+    background: #6cf;
+    font-size: .8rem;
+
+  }
+
+  .sidebar {
+    border: 5px solid red;
+    display: block;
+    width: 30%;
+    float: left;
+    clear: both;
+    margin: 2rem;
+    list-style-type: none;
+    background-color: lime;
+  }
+
+
+  footer {
+    display: inline-block;
+    list-style-type: none;
+    height: .5em;
+  }
+
+  footer li {
+    display: inline-block;
+    padding: .5rem;
+    list-style-type: none;
+  }
+
+
+
+
+/* end of tablet sizing    */
+}
+/* end of tablet sizing    */
+
+@media screen and (min-width: 721px) {
+/*DEFAULT 1260 PX SCREEN SIZE   */
+body {
+    background-color: #beefba; /*dark khaki */
 }
 
 #wrapper {
-  display: inline-block;
-
-  width: 90%;
+  display: block;
   min-height: 100%;
   flex-direction: column;
+  margin: 0 auto;
 }
 
 #wrapper:after {
@@ -17,46 +213,74 @@
   display: block;
 }
 
-nav {
+nav, nav li {
   display: inline-block;
-  font-size: 1em;
+  font-size: 1rem;
   text-transform: uppercase;
   margin: auto;
+  padding: .5rem;
+  background-color: #FF8C00; /*dark orange */
+
 }
 
 .current {
-  width: 100%;
-  color: #cafebabe;
-  font-size: 2rem;
-  border-radius: 8%;
+  display: inline-block;
+  color: #cafeba;
+  font-size: 1.65rem;
+  border-radius: 27%;
   text-transform: uppercase;
   background: red; /* For browsers that do not support gradients */
   background: -webkit-linear-gradient(-45deg, red, #00c8ff, green); /* Safari */
   background: -o-linear-gradient(-45deg, red, #00c8ff, green); /* Opera 11.6 to 12.0 */
   background: -moz-linear-gradient(-45deg, red, #00c8ff, green); /* Firefox 3.6 to 15 */
   background: linear-gradient(-45deg, red, #00c8ff, green); /* Standard syntax */
-
-  margin-left: 2%;
-  margin-right: 2%;
 }
 
+article {
+  display: block;
+  border: 5px dashed silver;
+  float: left;
+  clear: right;
+  background: sandybrown;
+}
 
 .content {
   display: block;
-  float: right;
-  width: 60%;
-  margin: auto;
+  float: left;
+  clear: both;
+  width: 45%;
+  margin: 2rem;
+  padding: 15px;
+  border: blue;
+  background: #6cf;
+  font-size: .8rem;
+
 }
 
 .sidebar {
+  border: 5px solid red;
   display: block;
-  float: right;
+  width: 45%;
+  float: left;
+  clear: both;
+  margin: 2rem;
   list-style-type: none;
   background-color: lime;
-  width: 33%;
 }
 
+
 footer {
-  height: 2em;
-  flex: 1;
+  display: inline-block;
+  list-style-type: none;
+  height: .5em;
+}
+
+footer li {
+  display: inline-block;
+  padding: .5rem;
+  list-style-type: none;
+}
+
+
+/* end of desktop sizing */
 }
